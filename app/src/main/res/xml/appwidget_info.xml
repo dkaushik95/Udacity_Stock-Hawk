@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:autoAdvanceViewId="@id/stack_view"
+    android:minHeight="240dp"
+    android:minWidth="240dp"
+    android:previewImage="@drawable/ic_multiline_chart_white_48dp"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="300000"
+    android:widgetCategory="home_screen">
+</appwidget-provider>

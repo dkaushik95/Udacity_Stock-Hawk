@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="72dp"
+
+      android:background="@color/cardview_dark_background"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingEnd="30dp"
+      android:paddingLeft="30dp"
+      android:paddingRight="30dp"
+      android:paddingStart="30dp"
+
+      >
+    <TextView
+        android:id="@+id/stock_symbol"
+        style="@style/StockSymbolTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/primary_text"
+        />
+
+    <TextView
+        android:id="@+id/bid_price"
+        style="@style/BidPriceTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/secondary_text"
+        tools:text="1000.00"
+
+
+        />
+    <TextView
+        android:id="@+id/change"
+        style="@style/PercentChangeTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/percent_change_pill"
+        tools:text="100%"
+        />
+
+  </LinearLayout>
+
+  <include layout="@layout/divider_horizontal"/>
+</LinearLayout>

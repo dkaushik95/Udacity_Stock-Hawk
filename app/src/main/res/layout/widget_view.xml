@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/widget_margin">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/today_stocks"
+        android:background="@drawable/percent_change_pill"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:loopViews="true"/>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D000000"
+        android:gravity="center"
+        android:text="@string/empty_view_text"
+        android:textColor="@color/icons"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+</LinearLayout>
